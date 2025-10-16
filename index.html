@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Freedom's Work</title>
-  <link rel="icon" type="image/png" href="https://cdn3.emoji.gg/emojis/91286-freaky.png" />
+  <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/e2/3f/f2/e23ff23003a9013e63b994b27ecae302.jpg" />
   <style>
     body {
       margin: 20px 5px;
@@ -12,6 +12,7 @@
       font-family: "Trebuchet MS", sans-serif;
       color: #000000;
       background-color: #E0FFFF;
+      /*applied for everything present*/
 
       background-image:
         radial-gradient(#00000033 2px, transparent 2.5px),
@@ -19,11 +20,20 @@
       background-size: 15px 15px, 100% 100%;
       background-repeat: repeat, no-repeat;
       background-blend-mode: lighten;
+      /*for ombre effect*/
     }
 
     img {
-      width: 500px;
+      width: 350px;
       height: auto;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      border-radius: 15px; /* Added to round the corners */
+    }
+    /*be careful all image unless image has another name = class="" */
+
+    img:hover {
+      box-shadow: 0 0 20px hotpink, 0 0 30px deeppink;
+      transform: scale(1.05);
     }
 
     a {
@@ -38,6 +48,7 @@
       text-decoration: underline;
       color: deeppink;
     }
+    /*link hover*/
 
     p {
       margin: 20px auto;
@@ -53,15 +64,43 @@
       margin-top: 40px;
       font-weight: bold;
     }
+
+    .link-and-music {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+.link-and-music .links a {
+  margin: 5px 0;
+}
+
+    /* note from non-graded = "#smth" is for the span id while .smth is for class*/
+
   </style>
 </head>
+
 <body>
+
   <h1> ⎯⎯ ୨ Freedom Aguinaldo's work ୧ ⎯⎯ </h1>
 
-  <img src="Orihime Inoue.jpg" alt="Orihime Inoue :p"/>
-  <a href="1stGraded.html">1st graded</a>
-  
+  <img src="https://i.pinimg.com/originals/a7/18/fc/a718fc67a9c8f9542928174dac5ad40c.gif" alt="Orihime Inoue :p"/>
+<div class="link-and-music">
+  <iframe
+    width="250"
+    height="200"
+    src="https://www.youtube.com/embed/cjD35LUEmrY?autoplay=1&playlist=cjD35LUEmrY&loop=1"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+  ></iframe>
 
-
+  <div class="links">
+    <a href="1stGraded.html">1st graded</a>
+    <a href="Q21NGCesiumAguinaldo.html">1st Non-graded task</a>
+  </div>
+</div>
 </body>
 </html>
